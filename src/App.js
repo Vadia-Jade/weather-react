@@ -1,5 +1,5 @@
 import React from "react";
-import Weather from "./Weather";
+import WeatherSearchEngine from "./WeatherSearchEngine";
 import './App.css';
 
 function App() {
@@ -7,9 +7,9 @@ function App() {
     <div className="App">
       <header className="App-header">
       <h1>
-        Hello world
+        Weather Search Engine
       </h1>
-      <Weather />
+      <WeatherSearchEngine />
       </header>
     </div>
   );
