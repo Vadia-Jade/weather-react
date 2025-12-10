@@ -35,9 +35,9 @@ export default function WeatherSearchEngine (){
     setCity(event.target.value);
   }
   let form = (
-    <form onSubmit = {handleSubmit}>
-    <input type="search" placeholder="Enter a City.." onChange={updateCity}/>
-    <button type="submit">Search</button>
+    <form onSubmit = {handleSubmit} className="formSearch">
+    <input type="search" placeholder="Enter a City.." onChange={updateCity} className="searchInput"/>
+    <button type="submit" className="formButton">Search</button>
     </form>
   );
   if (loading){
@@ -57,7 +57,7 @@ export default function WeatherSearchEngine (){
     return(
         <div>
             {form}
-            <ul className="formLayout">
+            <ul className="listLayout">
               <li>Temperature:{Math.round(weather.temperature)}°C</li>
               <li>Humidity: {weather.humidity}%</li>
               <li>Wind-Speed: {weather.wind}km/h</li>
